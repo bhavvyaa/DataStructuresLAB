@@ -10,14 +10,20 @@ void insertrear()
 }
 rear=rear+1;
 q[rear]=item;
-}int deletefront()
-{if (front>rear)
-{front=0;
+}
+int deletefront()
+{
+if (front>rear)
+{
+front=0;
 rear=-1;
 return -1;
-}return q[front++];
-}void displayQ()
-{int i;
+}
+return q[front++];
+}
+void displayQ()
+{
+int i;
 if (front>rear)
 {
 	printf("queue is empty\n");
